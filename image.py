@@ -74,7 +74,7 @@ while(1):
         if (w) > 60 and (h) > 60:
             res = cv2.rectangle(res,(x,y),(x+w,y+h),(0,255,0),2)
             frame = cv2.rectangle(frame,(x,y),(x+w,y+h),(0,255,0),2)
-
+    img = cv2.cvtColor(frame, cv2.COLOR_BGR2RGB)
     img = img.reshape((img.shape[0] * img.shape[1],3)) #represent as row*column,channel number
     clt = KMeans(n_clusters=12)
     #cluster number
@@ -82,7 +82,7 @@ while(1):
 
     hist = find_histogram(clt)
     bar = plot_colors2(hist, clt.cluster_centers_)
-    cv2.imshow('histogram', bar)
+    #cv2.imshow('histogram', bar)
     cv2.imshow('frame',frame)
     cv2.imshow('res',res)
     k = cv2.waitKey(5) & 0xFF
