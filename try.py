@@ -1,4 +1,16 @@
 
+#This code is written by Omar Radwan, with samples and methods copied from
+#https://opencv-python-tutroals.readthedocs.io/en/latest/py_tutorials/py_imgproc/py_colorspaces/py_colorspaces.html#converting-colorspaces
+
+#https://opencv-python-tutroals.readthedocs.io/en/latest/py_tutorials/py_imgproc/py_contours/py_contour_features/py_contour_features.html#contour-features
+#
+#There was also the use of GIMP to figure out color schemes for the main objects of use(Surgical mask and latex gloves)
+#There is also
+#There was also the use of https://code.likeagirl.io/finding-dominant-colour-on-an-image-b4e075f98097 to figure out how to generate a color histogram, USE try.py for a simulation of this, not image.py
+#
+#
+#
+#
 import cv2
 import numpy as np
 import matplotlib.pyplot as plt
